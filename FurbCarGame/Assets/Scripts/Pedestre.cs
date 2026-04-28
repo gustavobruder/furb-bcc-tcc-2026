@@ -16,7 +16,6 @@ public class Pedestre : MonoBehaviour
     public float VelocidadeAnimacaoAndando = 0.3f;
     private const float VelocidadeAnimacaoParado = 0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         agente = GetComponent<NavMeshAgent>();
@@ -28,7 +27,6 @@ public class Pedestre : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (objetivos.Length == 0 || objetivos[proximoObjetivo] == null)
