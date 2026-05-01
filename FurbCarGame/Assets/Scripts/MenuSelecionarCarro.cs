@@ -8,9 +8,13 @@ public class MenuSelecionarCarro : MonoBehaviour
     public GameObject[] carros;
     public Button btnEsquerda;
     public Button btnDireita;
+    public Button btnFaseTransito1;
+    public Button btnFaseTransito2;
     public Button btnFaseEstacionamento1;
     public Button btnFaseEstacionamento2;
     public Button btnFaseEstacionamento3;
+    public Button btnFaseCorrida1;
+    public Button btnFaseCorrida2;
     public GameObject menuMapeamentoBotoes;
 
     private int _indiceCarroSelecionado;
@@ -72,7 +76,7 @@ public class MenuSelecionarCarro : MonoBehaviour
                     _indiceFaseEstacionamentoSelecionada--;
                     DefinirBotaoFaseSelecionada();
                     break;
-                case INDICE_BTN_DPAD_DIREITA when _indiceFaseEstacionamentoSelecionada < 2:
+                case INDICE_BTN_DPAD_DIREITA when _indiceFaseEstacionamentoSelecionada < 6:
                     _indiceFaseEstacionamentoSelecionada++;
                     DefinirBotaoFaseSelecionada();
                     break;
@@ -84,9 +88,13 @@ public class MenuSelecionarCarro : MonoBehaviour
 
     private void DefinirBotaoFaseSelecionada()
     {
-        btnFaseEstacionamento1.interactable = _indiceFaseEstacionamentoSelecionada == 0;
-        btnFaseEstacionamento2.interactable = _indiceFaseEstacionamentoSelecionada == 1;
-        btnFaseEstacionamento3.interactable = _indiceFaseEstacionamentoSelecionada == 2;
+        btnFaseTransito1.interactable = _indiceFaseEstacionamentoSelecionada == 0;
+        btnFaseTransito2.interactable = _indiceFaseEstacionamentoSelecionada == 1;
+        btnFaseEstacionamento1.interactable = _indiceFaseEstacionamentoSelecionada == 2;
+        btnFaseEstacionamento2.interactable = _indiceFaseEstacionamentoSelecionada == 3;
+        btnFaseEstacionamento3.interactable = _indiceFaseEstacionamentoSelecionada == 4;
+        btnFaseCorrida1.interactable = _indiceFaseEstacionamentoSelecionada == 5;
+        btnFaseCorrida2.interactable = _indiceFaseEstacionamentoSelecionada == 6;
     }
 
     private bool BtnPressionado(LogitechGSDK.DIJOYSTATE2ENGINES logiState, int indiceBtn)
@@ -152,24 +160,48 @@ public class MenuSelecionarCarro : MonoBehaviour
     {
         switch (_indiceFaseEstacionamentoSelecionada)
         {
-            case 0: JogarFase1(); break;
-            case 1: JogarFase2(); break;
-            case 2: JogarFase3(); break;
+            case 0: JogarFaseTransito1(); break;
+            case 1: JogarFaseTransito2(); break;
+            case 2: JogarFaseEstacionamento1(); break;
+            case 3: JogarFaseEstacionamento2(); break;
+            case 4: JogarFaseEstacionamento3(); break;
+            case 5: JogarFaseCorrida1(); break;
+            case 6: JogarFaseCorrida2(); break;
         }
     }
 
-    public void JogarFase1()
+    public void JogarFaseTransito1()
+    {
+        SceneManager.LoadSceneAsync("Fase1");
+    }
+
+    public void JogarFaseTransito2()
+    {
+        SceneManager.LoadSceneAsync("Fase2");
+    }
+
+    public void JogarFaseEstacionamento1()
     {
         SceneManager.LoadSceneAsync("Estacionamento1");
     }
 
-    public void JogarFase2()
+    public void JogarFaseEstacionamento2()
     {
         SceneManager.LoadSceneAsync("Estacionamento2");
     }
 
-    public void JogarFase3()
+    public void JogarFaseEstacionamento3()
     {
         SceneManager.LoadSceneAsync("Estacionamento3");
+    }
+
+    public void JogarFaseCorrida1()
+    {
+        SceneManager.LoadSceneAsync("Fase3");
+    }
+
+    public void JogarFaseCorrida2()
+    {
+        SceneManager.LoadSceneAsync("Fase4");
     }
 }
