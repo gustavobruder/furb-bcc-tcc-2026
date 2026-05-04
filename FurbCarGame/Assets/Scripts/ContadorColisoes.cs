@@ -25,7 +25,7 @@ public class ContadorColisoes : MonoBehaviour
 
     private void DefinirTextoColisoes()
     {
-        textoColisoes.text = "Colisões: " + _quantidadeColisoes;
+        textoColisoes.text = $"Colisões: {_quantidadeColisoes}";
     }
 
     private void AplicarEfeitoColisao()
