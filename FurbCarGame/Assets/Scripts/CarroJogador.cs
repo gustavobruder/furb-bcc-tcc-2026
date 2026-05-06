@@ -29,6 +29,7 @@ public class CarroJogador : MonoBehaviour
     public CarroVolante carroVolante;
     public CarroMarchas carroMarchas;
     public CarroCameras carroCameras;
+    public CarroSetas carroSetas;
     public Notificacao notificacao;
     public ContadorColisoes contadorColisoes;
     public GameObject menuMapeamentoBotoes;
@@ -45,6 +46,8 @@ public class CarroJogador : MonoBehaviour
     private const int INDICE_BTN_CAMERA = 6;
     private const int INDICE_BTN_OPTIONS = 9;
     private const int INDICE_BTN_PLAYSTATION = 24;
+    private const int INDICE_BTN_SETA_DIREITA = 10;
+    private const int INDICE_BTN_SETA_ESQUERDA = 11;
     private const int INDICE_BTN_QUADRADO = 1;
     private const int INDICE_BTN_BOLA = 2;
     private const int INDICE_BTN_TRIANGULO = 3;
@@ -124,6 +127,8 @@ public class CarroJogador : MonoBehaviour
         if (BtnPressionado(logiState, INDICE_BTN_CAMERA)) carroCameras.AlternarCamera();
         if (BtnPressionado(logiState, INDICE_BTN_OPTIONS)) menuMapeamentoBotoes.SetActive(!menuMapeamentoBotoes.activeSelf);
         if (BtnPressionado(logiState, INDICE_BTN_PLAYSTATION)) SceneManager.LoadSceneAsync("MenuPrincipal");
+        if (BtnPressionado(logiState, INDICE_BTN_SETA_DIREITA)) carroSetas.AlternarSetaDireita();
+        if (BtnPressionado(logiState, INDICE_BTN_SETA_ESQUERDA)) carroSetas.AlternarSetaEsquerda();
         if (BtnPressionado(logiState, INDICE_BTN_QUADRADO))
         {
             EstradaBarroHabilitada = !EstradaBarroHabilitada;
