@@ -1005,6 +1005,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 164477333}
+    - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1134030699}
@@ -1092,6 +1096,10 @@ PrefabInstance:
       propertyPath: textoCronometro
       value: 
       objectReference: {fileID: 1033831431}
+    - target: {fileID: 8606971396416785575, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: textoCronometroMelhorTempo
+      value: 
+      objectReference: {fileID: 1073551008}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2159961965311743973, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
@@ -1103,6 +1111,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 47617482}
+    - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164477333}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
 --- !u!1 &47617477 stripped
 GameObject:
@@ -1613,7 +1624,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &62231921
 MonoBehaviour:
@@ -2926,13 +2937,14 @@ GameObject:
   - component: {fileID: 153129841}
   - component: {fileID: 153129843}
   - component: {fileID: 153129842}
+  - component: {fileID: 153129844}
   m_Layer: 0
   m_Name: Waypoint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &153129841
 Transform:
   m_ObjectHideFlags: 0
@@ -2977,6 +2989,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153129840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &153129844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153129840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5424d93a48aa4fa39d16addd70013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximoWaypoint: {fileID: 1689337770}
+  spawnerCarroSelecionado: {fileID: 1391969634}
 --- !u!1001 &159261144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3123,6 +3149,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6310788021373370401, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
   m_PrefabInstance: {fileID: 47617476}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &164477333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47617477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 1900350792}
+  luzTraseiraDireita: {fileID: 2061721399}
+  luzDianteiraEsquerda: {fileID: 795977149}
+  luzTraseiraEsquerda: {fileID: 222789674}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &168515179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4562,6 +4614,10 @@ PrefabInstance:
       propertyPath: textoCronometro
       value: 
       objectReference: {fileID: 1033831431}
+    - target: {fileID: 800610011331536470, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: textoCronometroMelhorTempo
+      value: 
+      objectReference: {fileID: 1073551008}
     - target: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: m_Name
       value: Carro3_Jogador
@@ -4578,6 +4634,10 @@ PrefabInstance:
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1134030699}
+    - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 484108905}
     - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: notificacao
       value: 
@@ -4605,6 +4665,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 253958469}
+    - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 484108905}
   m_SourcePrefab: {fileID: 100100000, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
 --- !u!1 &253958464 stripped
 GameObject:
@@ -9513,6 +9576,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 109025121006516793, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
   m_PrefabInstance: {fileID: 253958463}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &484108905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253958464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 389443580}
+  luzTraseiraDireita: {fileID: 785803341}
+  luzDianteiraEsquerda: {fileID: 113228769}
+  luzTraseiraEsquerda: {fileID: 1090800034}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &484550574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13385,13 +13474,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1033831430}
+  - {fileID: 1073551007}
   - {fileID: 62231920}
   m_Father: {fileID: 302327285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -10, y: -10}
-  m_SizeDelta: {x: 250, y: 100}
+  m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &702123895
 MonoBehaviour:
@@ -17390,13 +17480,14 @@ GameObject:
   - component: {fileID: 884811508}
   - component: {fileID: 884811510}
   - component: {fileID: 884811509}
+  - component: {fileID: 884811511}
   m_Layer: 0
   m_Name: Waypoint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &884811508
 Transform:
   m_ObjectHideFlags: 0
@@ -17441,6 +17532,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884811507}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &884811511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884811507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5424d93a48aa4fa39d16addd70013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximoWaypoint: {fileID: 1379158672}
+  spawnerCarroSelecionado: {fileID: 1391969634}
 --- !u!1001 &901132892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18861,6 +18966,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1169916373}
+    - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1134030699}
@@ -18944,6 +19053,10 @@ PrefabInstance:
       propertyPath: textoCronometro
       value: 
       objectReference: {fileID: 1033831431}
+    - target: {fileID: 8134928823805626096, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: textoCronometroMelhorTempo
+      value: 
+      objectReference: {fileID: 1073551008}
     - target: {fileID: 8254611872080863732, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: notificacao
       value: 
@@ -18963,6 +19076,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 963518315}
+    - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1169916373}
   m_SourcePrefab: {fileID: 100100000, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
 --- !u!1 &963518310 stripped
 GameObject:
@@ -20085,6 +20201,7 @@ GameObject:
   - component: {fileID: 1020645863}
   - component: {fileID: 1020645865}
   - component: {fileID: 1020645864}
+  - component: {fileID: 1020645866}
   m_Layer: 0
   m_Name: Waypoint2
   m_TagString: Untagged
@@ -20136,6 +20253,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020645862}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1020645866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020645862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5424d93a48aa4fa39d16addd70013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximoWaypoint: {fileID: 153129840}
+  spawnerCarroSelecionado: {fileID: 1391969634}
 --- !u!1001 &1026952352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20346,7 +20477,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1033831431
 MonoBehaviour:
@@ -20381,7 +20512,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00:00
+  m_Text: 'Tempo: 00:00'
 --- !u!222 &1033831432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21028,6 +21159,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c2391e8a6bdf5424194b61e41952a40a, type: 3}
   m_PrefabInstance: {fileID: 1068314580}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1073551006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073551007}
+  - component: {fileID: 1073551009}
+  - component: {fileID: 1073551008}
+  m_Layer: 5
+  m_Name: CronometroMelhorTempo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1073551007
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073551006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 702123894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 250, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1073551008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073551006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 28
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Melhor: 00:00'
+--- !u!222 &1073551009
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073551006}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1079061953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22645,6 +22855,10 @@ PrefabInstance:
       propertyPath: textoCronometro
       value: 
       objectReference: {fileID: 1033831431}
+    - target: {fileID: 374281310949263064, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: textoCronometroMelhorTempo
+      value: 
+      objectReference: {fileID: 1073551008}
     - target: {fileID: 2245473075097112666, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: textoColisoes
       value: 
@@ -22682,6 +22896,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1134030699}
     - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1610571483}
+    - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1134030699}
@@ -22704,6 +22922,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1141955575}
+    - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1610571483}
   m_SourcePrefab: {fileID: 100100000, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
 --- !u!1 &1141955570 stripped
 GameObject:
@@ -23263,6 +23484,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
   m_PrefabInstance: {fileID: 963518309}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1169916373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963518310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 561111728}
+  luzTraseiraDireita: {fileID: 728380979}
+  luzDianteiraEsquerda: {fileID: 1396258452}
+  luzTraseiraEsquerda: {fileID: 1272269163}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &1170733237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24865,6 +25112,10 @@ PrefabInstance:
       propertyPath: textoCronometro
       value: 
       objectReference: {fileID: 1033831431}
+    - target: {fileID: 3225898521318977371, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: textoCronometroMelhorTempo
+      value: 
+      objectReference: {fileID: 1073551008}
     - target: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: m_Name
       value: Carro2_Jogador
@@ -24873,6 +25124,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1267347182}
     - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: notificacao
       value: 
@@ -24904,6 +25159,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1267347181}
+    - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1267347182}
   m_SourcePrefab: {fileID: 100100000, guid: 428fb35c9809caa428039730265ffc13, type: 3}
 --- !u!1 &1267347176 stripped
 GameObject:
@@ -24992,6 +25250,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &1267347182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267347176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 495691137}
+  luzTraseiraDireita: {fileID: 232370992}
+  luzDianteiraEsquerda: {fileID: 1937689610}
+  luzTraseiraEsquerda: {fileID: 1031266911}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &1272269160
 GameObject:
   m_ObjectHideFlags: 0
@@ -26513,13 +26797,15 @@ GameObject:
   - component: {fileID: 1379158673}
   - component: {fileID: 1379158676}
   - component: {fileID: 1379158674}
+  - component: {fileID: 1379158677}
+  - component: {fileID: 1379158678}
   m_Layer: 0
   m_Name: Waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1379158673
 Transform:
   m_ObjectHideFlags: 0
@@ -26564,6 +26850,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379158672}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1379158677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379158672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5424d93a48aa4fa39d16addd70013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximoWaypoint: {fileID: 1020645862}
+  spawnerCarroSelecionado: {fileID: 1391969634}
+--- !u!114 &1379158678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379158672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ac91ea8eec02a43a0f192168e5f338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1391969634}
+  notificacao: {fileID: 1134030699}
 --- !u!1001 &1384859811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28335,13 +28649,14 @@ GameObject:
   - component: {fileID: 1496120130}
   - component: {fileID: 1496120132}
   - component: {fileID: 1496120131}
+  - component: {fileID: 1496120133}
   m_Layer: 0
   m_Name: Waypoint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1496120130
 Transform:
   m_ObjectHideFlags: 0
@@ -28386,6 +28701,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496120129}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1496120133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496120129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5424d93a48aa4fa39d16addd70013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximoWaypoint: {fileID: 884811507}
+  spawnerCarroSelecionado: {fileID: 1391969634}
 --- !u!1001 &1502570523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30199,6 +30528,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 23680652986251212, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
   m_PrefabInstance: {fileID: 1141955569}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1610571483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141955570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 936539964}
+  luzTraseiraDireita: {fileID: 2028578738}
+  luzDianteiraEsquerda: {fileID: 625561734}
+  luzTraseiraEsquerda: {fileID: 1874000096}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &1613448329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31975,13 +32330,14 @@ GameObject:
   - component: {fileID: 1689337771}
   - component: {fileID: 1689337773}
   - component: {fileID: 1689337772}
+  - component: {fileID: 1689337774}
   m_Layer: 0
   m_Name: Waypoint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1689337771
 Transform:
   m_ObjectHideFlags: 0
@@ -32026,6 +32382,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689337770}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1689337774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689337770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5424d93a48aa4fa39d16addd70013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximoWaypoint: {fileID: 1496120129}
+  spawnerCarroSelecionado: {fileID: 1391969634}
 --- !u!1001 &1692551387
 PrefabInstance:
   m_ObjectHideFlags: 0

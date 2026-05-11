@@ -6182,7 +6182,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &504325844
 MonoBehaviour:
@@ -17811,7 +17811,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1364975911
 MonoBehaviour:
@@ -17846,7 +17846,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00:00
+  m_Text: 'Tempo: 00:00'
 --- !u!222 &1364975912
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17917,6 +17917,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1382612686}
     - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: notificacao
       value: 
@@ -18023,6 +18027,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1382612685}
+    - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1382612686}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
 --- !u!1 &1382612680 stripped
 GameObject:
@@ -18111,6 +18118,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &1382612686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382612680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 1869148793}
+  luzTraseiraDireita: {fileID: 745343258}
+  luzDianteiraEsquerda: {fileID: 1121789638}
+  luzTraseiraEsquerda: {fileID: 885574171}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &1397530979
 GameObject:
   m_ObjectHideFlags: 0
@@ -19907,6 +19940,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1308400354}
     - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1508142460}
+    - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1308400354}
@@ -19936,6 +19973,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1508142459}
+    - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1508142460}
   m_SourcePrefab: {fileID: 100100000, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
 --- !u!1 &1508142454 stripped
 GameObject:
@@ -20024,6 +20064,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &1508142460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508142454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 1167661395}
+  luzTraseiraDireita: {fileID: 921051052}
+  luzDianteiraEsquerda: {fileID: 976428394}
+  luzTraseiraEsquerda: {fileID: 1465138058}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &1526591276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20113,6 +20179,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1308400354}
     - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1526591283}
+    - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1308400354}
@@ -20138,6 +20208,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1526591282}
+    - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1526591283}
   m_SourcePrefab: {fileID: 100100000, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
 --- !u!1 &1526591277 stripped
 GameObject:
@@ -20226,6 +20299,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &1526591283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526591277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 2127734229}
+  luzTraseiraDireita: {fileID: 1663875512}
+  luzDianteiraEsquerda: {fileID: 555028737}
+  luzTraseiraEsquerda: {fileID: 1448513653}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &1531082306
 GameObject:
   m_ObjectHideFlags: 0
@@ -25878,6 +25977,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 2048546148}
+    - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1308400354}
@@ -25987,6 +26090,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2048546147}
+    - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048546148}
   m_SourcePrefab: {fileID: 100100000, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
 --- !u!1 &2048546142 stripped
 GameObject:
@@ -26075,6 +26181,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &2048546148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048546142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 910966430}
+  luzTraseiraDireita: {fileID: 1345182548}
+  luzDianteiraEsquerda: {fileID: 202054772}
+  luzTraseiraEsquerda: {fileID: 914542303}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &2054220905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26160,6 +26292,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 2054220912}
+    - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1308400354}
@@ -26189,6 +26325,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2054220911}
+    - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054220912}
   m_SourcePrefab: {fileID: 100100000, guid: 428fb35c9809caa428039730265ffc13, type: 3}
 --- !u!1 &2054220906 stripped
 GameObject:
@@ -26277,6 +26416,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &2054220912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054220906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 796627674}
+  luzTraseiraDireita: {fileID: 135470588}
+  luzDianteiraEsquerda: {fileID: 1560710261}
+  luzTraseiraEsquerda: {fileID: 190072239}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &2056929636
 GameObject:
   m_ObjectHideFlags: 0

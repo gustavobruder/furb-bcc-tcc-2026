@@ -2505,6 +2505,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 646065654}
+    - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1374909051}
@@ -2610,6 +2614,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 179634367}
+    - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 646065654}
   m_SourcePrefab: {fileID: 100100000, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
 --- !u!1 &179634362 stripped
 GameObject:
@@ -5351,7 +5358,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &368296105
 MonoBehaviour:
@@ -6481,6 +6488,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1374909051}
     - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 883513123}
+    - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1374909051}
@@ -6506,6 +6517,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 426160830}
+    - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 883513123}
   m_SourcePrefab: {fileID: 100100000, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
 --- !u!1 &426160825 stripped
 GameObject:
@@ -8966,6 +8980,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6310788021373370401, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
   m_PrefabInstance: {fileID: 179634361}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &646065654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179634362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 1922374232}
+  luzTraseiraDireita: {fileID: 1003665755}
+  luzDianteiraEsquerda: {fileID: 1271462642}
+  luzTraseiraEsquerda: {fileID: 2077727257}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &652882123
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,6 +9556,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1374909051}
     - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 937520000}
+    - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1374909051}
@@ -9545,6 +9589,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       insertIndex: -1
       addedObject: {fileID: 690368244}
+    - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937520000}
   m_SourcePrefab: {fileID: 100100000, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
 --- !u!1 &690368239 stripped
 GameObject:
@@ -9676,6 +9723,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1552606483}
+    - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1374909051}
@@ -9785,6 +9836,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 705277297}
+    - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1552606483}
   m_SourcePrefab: {fileID: 100100000, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
 --- !u!1 &705277292 stripped
 GameObject:
@@ -12732,6 +12786,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 109025121006516793, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
   m_PrefabInstance: {fileID: 426160824}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &883513123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426160825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 444511756}
+  luzTraseiraDireita: {fileID: 75530358}
+  luzDianteiraEsquerda: {fileID: 1972195852}
+  luzTraseiraEsquerda: {fileID: 1096406711}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &888566386
 GameObject:
   m_ObjectHideFlags: 0
@@ -13241,6 +13321,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 23680652986251212, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
   m_PrefabInstance: {fileID: 690368238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &937520000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690368239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 1956474524}
+  luzTraseiraDireita: {fileID: 229879822}
+  luzDianteiraEsquerda: {fileID: 193898929}
+  luzTraseiraEsquerda: {fileID: 141971186}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &946206739
 GameObject:
   m_ObjectHideFlags: 0
@@ -18706,6 +18812,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: carroSetas
+      value: 
+      objectReference: {fileID: 1319349339}
+    - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1374909051}
@@ -18735,6 +18845,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1319349338}
+    - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1319349339}
   m_SourcePrefab: {fileID: 100100000, guid: 428fb35c9809caa428039730265ffc13, type: 3}
 --- !u!1 &1319349333 stripped
 GameObject:
@@ -18823,6 +18936,32 @@ MonoBehaviour:
   freio: 0
   acelerador: 0
   trocarMarchasAutomaticamente: 0
+--- !u!114 &1319349339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319349333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 2021860333}
+  luzTraseiraDireita: {fileID: 1145190922}
+  luzDianteiraEsquerda: {fileID: 1210956874}
+  luzTraseiraEsquerda: {fileID: 550541104}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1 &1352000331
 GameObject:
   m_ObjectHideFlags: 0
@@ -21191,6 +21330,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
   m_PrefabInstance: {fileID: 705277291}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1552606483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705277292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9642b6fdfd4ef4b8d42c91f2d21a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetaDireitaLigada: 0
+  SetaEsquerdaLigada: 0
+  luzDianteiraDireita: {fileID: 1072364253}
+  luzTraseiraDireita: {fileID: 681194282}
+  luzDianteiraEsquerda: {fileID: 722414358}
+  luzTraseiraEsquerda: {fileID: 417471199}
+  intensidadeLuz: 2
+  alcanceLuz: 1
+  intervaloPisca: 0.5
+  corSeta: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  renderizadoresEmissaoDireita: []
+  renderizadoresEmissaoEsquerda: []
+  corEmissaoInativa: {r: 0, g: 0, b: 0, a: 1}
+  corEmissaoSeta: {r: 2, g: 1.4, b: 0, a: 1}
 --- !u!1001 &1553359478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21280,7 +21445,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1554015661
 MonoBehaviour:
@@ -21315,7 +21480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00:00
+  m_Text: 'Tempo: 00:00'
 --- !u!222 &1554015662
 CanvasRenderer:
   m_ObjectHideFlags: 0
