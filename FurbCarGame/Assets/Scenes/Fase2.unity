@@ -846,6 +846,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 532829156}
   - {fileID: 746691122}
+  tempoEspera: 5
   VelocidadeAnimacaoAndando: 0.3
 --- !u!195 &12495002
 NavMeshAgent:
@@ -13225,6 +13226,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 559897913}
   - {fileID: 806197242}
+  tempoEspera: 5
   VelocidadeAnimacaoAndando: 0.6
 --- !u!195 &303629615
 NavMeshAgent:
@@ -28989,6 +28991,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 802115372}
   - {fileID: 1409874679}
+  tempoEspera: 2
   VelocidadeAnimacaoAndando: 0.3
 --- !u!54 &656944177
 Rigidbody:
@@ -30041,6 +30044,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 266929999}
   - {fileID: 887168273}
+  tempoEspera: 5
   VelocidadeAnimacaoAndando: 0.6
 --- !u!54 &674025756
 Rigidbody:
@@ -30738,6 +30742,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 592794197}
   - {fileID: 1479376976}
+  tempoEspera: 2
   VelocidadeAnimacaoAndando: 0.3
 --- !u!54 &682016851
 Rigidbody:
@@ -47764,6 +47769,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 1321247351}
   - {fileID: 40294353}
+  tempoEspera: 2
   VelocidadeAnimacaoAndando: 0.3
 --- !u!54 &1106512651
 Rigidbody:
@@ -57447,6 +57453,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 1409874679}
   - {fileID: 802115372}
+  tempoEspera: 2
   VelocidadeAnimacaoAndando: 0.3
 --- !u!54 &1299316677
 Rigidbody:
@@ -66136,6 +66143,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 1955731138}
   - {fileID: 2123346484}
+  tempoEspera: 5
   VelocidadeAnimacaoAndando: 0.3
 --- !u!195 &1449242355
 NavMeshAgent:
@@ -69599,6 +69607,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 1479376976}
   - {fileID: 592794197}
+  tempoEspera: 2
   VelocidadeAnimacaoAndando: 0.3
 --- !u!54 &1540932884
 Rigidbody:
@@ -73504,6 +73513,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 40294353}
   - {fileID: 1321247351}
+  tempoEspera: 2
   VelocidadeAnimacaoAndando: 0.3
 --- !u!54 &1640515298
 Rigidbody:
@@ -77122,6 +77132,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 746691122}
   - {fileID: 532829156}
+  tempoEspera: 5
   VelocidadeAnimacaoAndando: 0.3
 --- !u!195 &1711497173
 NavMeshAgent:
@@ -88984,6 +88995,7 @@ MonoBehaviour:
   objetivos:
   - {fileID: 2123346484}
   - {fileID: 1955731138}
+  tempoEspera: 5
   VelocidadeAnimacaoAndando: 0.3
 --- !u!195 &1958954404
 NavMeshAgent:

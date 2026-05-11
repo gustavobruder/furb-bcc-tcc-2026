@@ -9,7 +9,7 @@ public class Pedestre : MonoBehaviour
     public Semaforo semaforo;
     [FormerlySerializedAs("goals")] public Transform[] objetivos = new Transform[2];
     private int proximoObjetivo = 0;
-    private float tempoEspera = 3f;
+    public float tempoEspera = 3f;
     private float contadorEspera = 0f;
     private bool estaEsperando = false;
     private const string ParametroVelocidade = "Speed_f";
@@ -77,7 +77,7 @@ public class Pedestre : MonoBehaviour
     bool SemaforoBloqueando()
     {
         return semaforo != null &&
-            (semaforo.estadoAtual == Semaforo.EstadoSemaforo.Vermelho ||
+            (semaforo.estadoAtual == Semaforo.EstadoSemaforo.Verde ||
              semaforo.estadoAtual == Semaforo.EstadoSemaforo.Amarelo);
     }
 
