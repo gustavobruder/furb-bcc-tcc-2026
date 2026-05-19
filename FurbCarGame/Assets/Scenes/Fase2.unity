@@ -713,7 +713,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6500a3af3916b045b02f16bb873b7c6, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a6500a3af3916b045b02f16bb873b7c6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a6500a3af3916b045b02f16bb873b7c6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a6500a3af3916b045b02f16bb873b7c6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6500a3af3916b045b02f16bb873b7c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13141,7 +13153,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: 207a12501abe2cc4e87f0e06f7bbf40a, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 207a12501abe2cc4e87f0e06f7bbf40a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 207a12501abe2cc4e87f0e06f7bbf40a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 207a12501abe2cc4e87f0e06f7bbf40a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 207a12501abe2cc4e87f0e06f7bbf40a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16696,6 +16720,76 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6, y: 6, z: 0.6}
   m_Center: {x: 0, y: 3, z: 0}
+--- !u!1 &385231043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385231044}
+  - component: {fileID: 385231045}
+  - component: {fileID: 385231046}
+  m_Layer: 0
+  m_Name: ValidadorSemaforo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &385231044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385231043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 68, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 4, z: 16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023181828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &385231045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385231043}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &385231046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385231043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133eb21690cb4b86852a40f1884b9796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1704259002}
+  semaforo: {fileID: 1596532724}
+  notificacao: {fileID: 1042972434}
+  contadorInfracoes: {fileID: 1544396826}
 --- !u!1001 &387720816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28884,7 +28978,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 38cc7e5f096b2e04c9dff104799c0211, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38cc7e5f096b2e04c9dff104799c0211, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38cc7e5f096b2e04c9dff104799c0211, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 38cc7e5f096b2e04c9dff104799c0211, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38cc7e5f096b2e04c9dff104799c0211, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29937,7 +30043,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9206140e15773914a987dd3a4da41b93, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9206140e15773914a987dd3a4da41b93, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9206140e15773914a987dd3a4da41b93, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9206140e15773914a987dd3a4da41b93, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9206140e15773914a987dd3a4da41b93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30635,7 +30753,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: 17fea068be688684c9c9eda0742c2dfc, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 17fea068be688684c9c9eda0742c2dfc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 17fea068be688684c9c9eda0742c2dfc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 17fea068be688684c9c9eda0742c2dfc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 17fea068be688684c9c9eda0742c2dfc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47662,7 +47792,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 17b3f8969a06248408c038783fd32ca2, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 17b3f8969a06248408c038783fd32ca2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 17b3f8969a06248408c038783fd32ca2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 17b3f8969a06248408c038783fd32ca2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 17b3f8969a06248408c038783fd32ca2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57165,6 +57307,76 @@ CapsuleCollider:
   m_Height: 6
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: -0.1}
+--- !u!1 &1297089500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297089501}
+  - component: {fileID: 1297089502}
+  - component: {fileID: 1297089503}
+  m_Layer: 0
+  m_Name: ValidadorSemaforo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1297089501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297089500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 52, y: 2, z: 60}
+  m_LocalScale: {x: 1, y: 4, z: 16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023181828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1297089502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297089500}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1297089503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297089500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133eb21690cb4b86852a40f1884b9796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1704259002}
+  semaforo: {fileID: 2131734481}
+  notificacao: {fileID: 1042972434}
+  contadorInfracoes: {fileID: 1544396826}
 --- !u!1001 &1298494853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57346,7 +57558,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 507e88a891aff41419afd1ddf8980454, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 507e88a891aff41419afd1ddf8980454, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 507e88a891aff41419afd1ddf8980454, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 507e88a891aff41419afd1ddf8980454, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 507e88a891aff41419afd1ddf8980454, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66010,7 +66234,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: dbed0720ac8f01542a77941147088a4b, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: dbed0720ac8f01542a77941147088a4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: dbed0720ac8f01542a77941147088a4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: dbed0720ac8f01542a77941147088a4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: dbed0720ac8f01542a77941147088a4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -69500,7 +69736,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: 088fc972981693740af79f283ba655ba, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 088fc972981693740af79f283ba655ba, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 088fc972981693740af79f283ba655ba, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 088fc972981693740af79f283ba655ba, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 088fc972981693740af79f283ba655ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73406,7 +73654,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: cc72d8dbb777e9646830c95ab61ee018, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: cc72d8dbb777e9646830c95ab61ee018, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: cc72d8dbb777e9646830c95ab61ee018, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: cc72d8dbb777e9646830c95ab61ee018, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: cc72d8dbb777e9646830c95ab61ee018, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73928,6 +74188,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0ee6d569ec3227e40888e8151b331e0f, type: 3}
   m_PrefabInstance: {fileID: 1653099582}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1653899400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653899401}
+  - component: {fileID: 1653899402}
+  - component: {fileID: 1653899403}
+  m_Layer: 0
+  m_Name: ValidadorSemaforo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653899401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653899400}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 128, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 4, z: 16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023181828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1653899402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653899400}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1653899403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653899400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133eb21690cb4b86852a40f1884b9796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1704259002}
+  semaforo: {fileID: 1811945686}
+  notificacao: {fileID: 1042972434}
+  contadorInfracoes: {fileID: 1544396826}
 --- !u!1001 &1654988448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76999,7 +77329,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100066, guid: 0a9bd38abeec4344eb86d2380fa57240, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 0a9bd38abeec4344eb86d2380fa57240, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 0a9bd38abeec4344eb86d2380fa57240, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400066, guid: 0a9bd38abeec4344eb86d2380fa57240, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 0a9bd38abeec4344eb86d2380fa57240, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83757,6 +84099,76 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7848643, y: 0.92120963, z: 0.82525516}
   m_Center: {x: 0, y: 0.46033975, z: -0.000000029802322}
+--- !u!1 &1871089514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1871089515}
+  - component: {fileID: 1871089516}
+  - component: {fileID: 1871089517}
+  m_Layer: 0
+  m_Name: ValidadorSemaforo6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1871089515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871089514}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 120, y: 2, z: 152}
+  m_LocalScale: {x: 1, y: 4, z: 16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023181828}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &1871089516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871089514}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1871089517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871089514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133eb21690cb4b86852a40f1884b9796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1704259002}
+  semaforo: {fileID: 1806648274}
+  notificacao: {fileID: 1042972434}
+  contadorInfracoes: {fileID: 1544396826}
 --- !u!1001 &1871387611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88862,7 +89274,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f13c4cd7477c5fc4eb9e76f859a8841e, type: 3}
       propertyPath: m_TagString
-      value: Pedesre
+      value: Pedestre
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f13c4cd7477c5fc4eb9e76f859a8841e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f13c4cd7477c5fc4eb9e76f859a8841e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f13c4cd7477c5fc4eb9e76f859a8841e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f13c4cd7477c5fc4eb9e76f859a8841e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -91757,7 +92181,6 @@ Transform:
   - {fileID: 557092599}
   - {fileID: 530873609}
   - {fileID: 473264978}
-  - {fileID: 547118819}
   - {fileID: 549926522}
   - {fileID: 479307636}
   - {fileID: 520415887}
@@ -91771,7 +92194,6 @@ Transform:
   - {fileID: 706051337}
   - {fileID: 656042537}
   - {fileID: 678764603}
-  - {fileID: 791457783}
   - {fileID: 755849243}
   - {fileID: 699497904}
   - {fileID: 841646436}
@@ -91840,7 +92262,6 @@ Transform:
   - {fileID: 1473259743}
   - {fileID: 1503623136}
   - {fileID: 1503496314}
-  - {fileID: 1596532721}
   - {fileID: 1596278061}
   - {fileID: 1504186437}
   - {fileID: 1656736735}
@@ -91860,8 +92281,6 @@ Transform:
   - {fileID: 1603437873}
   - {fileID: 1871387612}
   - {fileID: 1603109791}
-  - {fileID: 1806648271}
-  - {fileID: 1811945684}
   - {fileID: 1811035494}
   - {fileID: 1791757533}
   - {fileID: 1808124890}
@@ -91891,12 +92310,23 @@ Transform:
   - {fileID: 2039222444}
   - {fileID: 2075768647}
   - {fileID: 2026426484}
-  - {fileID: 2131734478}
   - {fileID: 2141766119}
   - {fileID: 2143570724}
   - {fileID: 2140443772}
   - {fileID: 1903481700}
   - {fileID: 1955911629}
+  - {fileID: 1811945684}
+  - {fileID: 1596532721}
+  - {fileID: 2131734478}
+  - {fileID: 547118819}
+  - {fileID: 791457783}
+  - {fileID: 1806648271}
+  - {fileID: 1653899401}
+  - {fileID: 385231044}
+  - {fileID: 1297089501}
+  - {fileID: 2136702974}
+  - {fileID: 2139852992}
+  - {fileID: 1871089515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2023664604
@@ -97520,6 +97950,76 @@ Transform:
   - {fileID: 1553991059}
   m_Father: {fileID: 1535716683}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2136702973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2136702974}
+  - component: {fileID: 2136702975}
+  - component: {fileID: 2136702976}
+  m_Layer: 0
+  m_Name: ValidadorSemaforo4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2136702974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136702973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 112, y: 2, z: 60}
+  m_LocalScale: {x: 1, y: 4, z: 16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023181828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2136702975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136702973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2136702976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136702973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133eb21690cb4b86852a40f1884b9796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1704259002}
+  semaforo: {fileID: 547118822}
+  notificacao: {fileID: 1042972434}
+  contadorInfracoes: {fileID: 1544396826}
 --- !u!1001 &2138330522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97605,6 +98105,76 @@ CapsuleCollider:
   m_Height: 3.0713418
   m_Direction: 1
   m_Center: {x: 0.028981358, y: 1.5356709, z: -0.004864186}
+--- !u!1 &2139852991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2139852992}
+  - component: {fileID: 2139852993}
+  - component: {fileID: 2139852994}
+  m_Layer: 0
+  m_Name: ValidadorSemaforo5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2139852992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139852991}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 120, y: 2, z: 112}
+  m_LocalScale: {x: 1, y: 4, z: 16}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023181828}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &2139852993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139852991}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2139852994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139852991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133eb21690cb4b86852a40f1884b9796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerCarroSelecionado: {fileID: 1704259002}
+  semaforo: {fileID: 791457786}
+  notificacao: {fileID: 1042972434}
+  contadorInfracoes: {fileID: 1544396826}
 --- !u!1001 &2139862091
 PrefabInstance:
   m_ObjectHideFlags: 0
