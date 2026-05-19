@@ -751,6 +751,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64074778}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &67072709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67072710}
+  m_Layer: 0
+  m_Name: CentroMassa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67072710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67072709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1327920097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &68157522
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,6 +984,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c37b1ccfbc7ed274eb99f9d40e72c4e6, type: 3}
   m_PrefabInstance: {fileID: 88762196}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &90455425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90455426}
+  m_Layer: 0
+  m_Name: CentroMassa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90455426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90455425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 650592293}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95781012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8373,6 +8435,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654698940}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &655012876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655012877}
+  m_Layer: 0
+  m_Name: CentroMassa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655012877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655012876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235039854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &661171943
 GameObject:
   m_ObjectHideFlags: 0
@@ -17930,6 +18023,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2078994390}
     - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: pontoDoCentroDeMassa
+      value: 
+      objectReference: {fileID: 90455426}
+    - target: {fileID: 46902955563581114, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 1382612685}
@@ -17946,6 +18043,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 669004203}
     - target: {fileID: 3642936047121549901, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: notificacao
+      value: 
+      objectReference: {fileID: 1308400354}
+    - target: {fileID: 3977885646284129001, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1308400354}
@@ -18023,6 +18124,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6310788021373370401, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1233395172}
+    - targetCorrespondingSourceObject: {fileID: 6310788021373370401, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 90455426}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4612753859966588494, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       insertIndex: -1
@@ -19904,6 +20008,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1364975911}
     - target: {fileID: 2245473075097112666, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: notificacao
+      value: 
+      objectReference: {fileID: 1308400354}
+    - target: {fileID: 2245473075097112666, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: textoColisoes
       value: 
       objectReference: {fileID: 504325844}
@@ -19952,6 +20060,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2078994390}
     - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: pontoDoCentroDeMassa
+      value: 
+      objectReference: {fileID: 1803431936}
+    - target: {fileID: 7625119709772038685, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 1508142459}
@@ -19969,6 +20081,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 23680652986251212, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1207277990}
+    - targetCorrespondingSourceObject: {fileID: 23680652986251212, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1803431936}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       insertIndex: -1
@@ -20191,9 +20306,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2078994390}
     - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: pontoDoCentroDeMassa
+      value: 
+      objectReference: {fileID: 655012877}
+    - target: {fileID: 8452702937162525536, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 1526591282}
+    - target: {fileID: 8516470836877550926, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: notificacao
+      value: 
+      objectReference: {fileID: 1308400354}
     - target: {fileID: 8516470836877550926, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: textoColisoes
       value: 
@@ -20204,6 +20327,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 109025121006516793, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 575741323}
+    - targetCorrespondingSourceObject: {fileID: 109025121006516793, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 655012877}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       insertIndex: -1
@@ -23530,6 +23656,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793554681}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1803431935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803431936}
+  m_Layer: 0
+  m_Name: CentroMassa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803431936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803431935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 577443656}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1810991234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24831,6 +24988,37 @@ Transform:
   - {fileID: 636832352}
   m_Father: {fileID: 1594502464}
   m_LocalEulerAnglesHint: {x: 0, y: -31, z: 0}
+--- !u!1 &1917749881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1917749882}
+  m_Layer: 0
+  m_Name: CentroMassa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1917749882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917749881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 485235776}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1938009532
 GameObject:
   m_ObjectHideFlags: 0
@@ -25989,6 +26177,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2078994390}
     - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: pontoDoCentroDeMassa
+      value: 
+      objectReference: {fileID: 1917749882}
+    - target: {fileID: 1330743671591478825, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 2048546147}
@@ -26041,6 +26233,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1308400354}
     - target: {fileID: 4003803149203667938, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: notificacao
+      value: 
+      objectReference: {fileID: 1308400354}
+    - target: {fileID: 4003803149203667938, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: textoColisoes
       value: 
       objectReference: {fileID: 504325844}
@@ -26086,6 +26282,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 811932856}
+    - targetCorrespondingSourceObject: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1917749882}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5424825873501208677, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       insertIndex: -1
@@ -26236,6 +26435,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 669004203}
     - target: {fileID: 1792733889561203615, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: notificacao
+      value: 
+      objectReference: {fileID: 1308400354}
+    - target: {fileID: 1792733889561203615, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: textoColisoes
       value: 
       objectReference: {fileID: 504325844}
@@ -26304,6 +26507,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2078994390}
     - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: pontoDoCentroDeMassa
+      value: 
+      objectReference: {fileID: 67072710}
+    - target: {fileID: 7014514028068037151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 2054220911}
@@ -26321,6 +26528,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2554772331497583713, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 68157523}
+    - targetCorrespondingSourceObject: {fileID: 2554772331497583713, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67072710}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4489746464881060151, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       insertIndex: -1

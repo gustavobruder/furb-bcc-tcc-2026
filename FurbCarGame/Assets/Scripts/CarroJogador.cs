@@ -33,6 +33,7 @@ public class CarroJogador : MonoBehaviour
     public Notificacao notificacao;
     public ContadorColisoes contadorColisoes;
     public GameObject menuMapeamentoBotoes;
+    public Transform pontoDoCentroDeMassa;
 
     // -------------------------
     // Estado Logitech
@@ -60,6 +61,10 @@ public class CarroJogador : MonoBehaviour
     {
         Debug.Log("SteeringInit:" + LogitechGSDK.LogiSteeringInitialize(false));
         _rb = GetComponent<Rigidbody>();
+        if (pontoDoCentroDeMassa != null)
+        {
+            _rb.centerOfMass = pontoDoCentroDeMassa.localPosition;
+        }
         carroCameras.DefinirModoCamera();
     }
 
