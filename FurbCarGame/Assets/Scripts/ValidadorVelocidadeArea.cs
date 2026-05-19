@@ -15,7 +15,7 @@ public class ValidadorVelocidadeArea : MonoBehaviour
     public Notificacao notificacao;
     public ContadorInfracoes contadorInfracoes;
 
-    private const string MensagemInfracao = "Multa por excesso de velocidade.";
+    private const string MensagemInfracao = "Infração média por excesso de velocidade.";
 
     private readonly HashSet<Collider> _collidersCarroDentroDaArea = new HashSet<Collider>();
     private bool _infracaoAplicadaNestaEntrada = false;

@@ -15,7 +15,7 @@ public class ValidadorSetaCurva : MonoBehaviour
     public Notificacao notificacao;
     public ContadorInfracoes contadorInfracoes;
 
-    private const string MensagemInfracao = "Multa por fazer uma curva sem dar seta.";
+    private const string MensagemInfracao = "Infração grave por fazer uma curva sem dar seta.";
 
     private bool _validarInfracao = false;
     private bool _infracaoAplicada = false;
