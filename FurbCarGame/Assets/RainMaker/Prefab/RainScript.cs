@@ -26,6 +26,11 @@ namespace DigitalRuby.RainMaker
             {
                 if (FollowCamera)
                 {
+                    if (Camera == null)
+                    {
+                        return;
+                    }
+
                     var s = RainFallParticleSystem.shape;
                     s.shapeType = ParticleSystemShapeType.ConeVolume;
                     RainFallParticleSystem.transform.position = Camera.transform.position;

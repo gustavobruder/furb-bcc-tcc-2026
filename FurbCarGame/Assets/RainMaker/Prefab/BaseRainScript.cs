@@ -15,7 +15,10 @@ namespace DigitalRuby.RainMaker
 {
     public class BaseRainScript : MonoBehaviour
     {
-        [Tooltip("Camera the rain should hover over, defaults to main camera")]
+        [Tooltip("Spawner do carro selecionado usado para obter a camera do jogador")]
+        public global::SpawnerCarroSelecionado SpawnerCarroSelecionado;
+
+        [HideInInspector]
         public Camera Camera;
 
         [Tooltip("Whether rain should follow the camera. If false, rain must be moved manually and will not follow the camera.")]
@@ -122,6 +125,34 @@ namespace DigitalRuby.RainMaker
             audioSourceWind.Update();
         }
 
+        private void AtualizarCameraJogador()
+        {
+            if (SpawnerCarroSelecionado != null)
+            {
+                global::CarroCameras carroCameras = null;
+
+                if (SpawnerCarroSelecionado.CarrosSelecionado != null)
+                {
+                    carroCameras = SpawnerCarroSelecionado.CarrosSelecionado.GetComponent<global::CarroCameras>();
+                }
+
+                if (carroCameras == null)
+                {
+                    carroCameras = SpawnerCarroSelecionado.GetComponent<global::CarroCameras>();
+                }
+
+                if (carroCameras != null)
+                {
+                    Camera = carroCameras.ObterCamera();
+                }
+            }
+
+            if (Camera == null)
+            {
+                Camera = Camera.main;
+            }
+        }
+
         private void CheckForRainChange()
         {
             if (lastRainIntensityValue != RainIntensity)
@@ -224,10 +255,7 @@ namespace DigitalRuby.RainMaker
 
 #endif
 
-            if (Camera == null)
-            {
-                Camera = Camera.main;
-            }
+            AtualizarCameraJogador();
 
             audioSourceRainLight = new LoopingAudioSource(this, RainSoundLight, RainSoundAudioMixer);
             audioSourceRainMedium = new LoopingAudioSource(this, RainSoundMedium, RainSoundAudioMixer);
@@ -284,6 +312,13 @@ namespace DigitalRuby.RainMaker
             }
 
 #endif
+
+            AtualizarCameraJogador();
+
+            if (Camera == null)
+            {
+                return;
+            }
 
             CheckForRainChange();
             UpdateWind();

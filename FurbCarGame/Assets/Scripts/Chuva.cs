@@ -7,11 +7,9 @@ public class Chuva : MonoBehaviour
     public UnityEngine.UI.Slider RainSlider;
     public GameObject Sun;
 
-    private Quaternion originalRotation;
 
     private void Start()
     {
-        originalRotation = transform.localRotation;
         RainScript.RainIntensity = RainSlider.value = 0.5f;
         RainScript.EnableWind = true;
     }
