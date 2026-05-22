@@ -331,6 +331,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1813867064764844564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4758455466349202349}
+  m_Layer: 0
+  m_Name: CentroMassa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4758455466349202349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813867064764844564}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6310788021373370401}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114262297755124333
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +728,7 @@ Transform:
   - {fileID: 1351204377741882196}
   - {fileID: 670242027786673787}
   - {fileID: 7925466017884831145}
+  - {fileID: 4758455466349202349}
   - {fileID: 7232973862427655734}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -740,6 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoCronometro: {fileID: 0}
+  textoCronometroMelhorTempo: {fileID: 0}
 --- !u!114 &3977885646284129001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +786,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoColisoes: {fileID: 0}
+  notificacao: {fileID: 0}
+  contadorInfracoes: {fileID: 0}
 --- !u!114 &46902955563581114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,9 +808,11 @@ MonoBehaviour:
   carroVolante: {fileID: 8830546220328970602}
   carroMarchas: {fileID: 955881135616839917}
   carroCameras: {fileID: 1647616477152314108}
+  carroSetas: {fileID: 0}
   notificacao: {fileID: 0}
   contadorColisoes: {fileID: 3977885646284129001}
   menuMapeamentoBotoes: {fileID: 0}
+  pontoDoCentroDeMassa: {fileID: 0}
 --- !u!114 &4622416053745659726
 MonoBehaviour:
   m_ObjectHideFlags: 0
