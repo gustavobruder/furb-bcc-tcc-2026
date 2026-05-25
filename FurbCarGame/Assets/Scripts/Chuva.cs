@@ -14,6 +14,8 @@ public class Chuva : MonoBehaviour
     public UnityEngine.UI.Slider RainSlider;
     public GameObject Sun;
 
+    public static float IntensidadeAtual { get; private set; }
+
     [SerializeField]
     private Renderer skyDomeRenderer;
 
@@ -22,13 +24,24 @@ public class Chuva : MonoBehaviour
 
     private void Start()
     {
-        RainScript.RainIntensity = RainSlider.value;
+        AtualizarIntensidade(RainSlider.value);
         RainScript.EnableWind = true;
     }
 
     public void RainSliderChanged(float valor)
     {
-        RainScript.RainIntensity = valor;
+        AtualizarIntensidade(valor);
+    }
+
+    private void OnDisable()
+    {
+        IntensidadeAtual = 0.0f;
+    }
+
+    private void AtualizarIntensidade(float valor)
+    {
+        IntensidadeAtual = Mathf.Clamp01(valor);
+        RainScript.RainIntensity = IntensidadeAtual;
     }
 
     public void DawnDuskSliderChanged(float valor)

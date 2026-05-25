@@ -14,13 +14,40 @@ public class CarroRodas : MonoBehaviour
     public Transform rodaMeshRL;
     public Transform rodaMeshRR;
 
+    [Header("Aderencia sob chuva")]
+    public Rigidbody rb;
+    [Min(0f)] public float velocidadeInicioDeslizamentoKmH = 0f;
+    [Min(0f)] public float velocidadeAderenciaMinimaKmH = 100f;
+    [Range(0f, 0.95f)] public float reducaoMaximaAderenciaLateral = 0.65f;
+    [Range(0f, 0.95f)] public float reducaoMaximaAderenciaLongitudinal = 0.35f;
+    [Min(0.01f)] public float suavizacaoAderencia = 5f;
+
     private float _l;
     private float _w;
     private float _raioBase = 6f;
     private float _anguloMaxDirecao = 40f;
+    private WheelCollider[] _rodas;
+    private WheelFrictionCurve[] _atritosLateraisBase;
+    private WheelFrictionCurve[] _atritosLongitudinaisBase;
+    private float _fatorAderenciaLateralAtual = 1f;
+    private float _fatorAderenciaLongitudinalAtual = 1f;
 
     private void Start()
     {
+        if (!rb) rb = GetComponentInParent<Rigidbody>();
+
+        _rodas = new[] { rodaColliderFL, rodaColliderFR, rodaColliderRL, rodaColliderRR };
+        _atritosLateraisBase = new WheelFrictionCurve[_rodas.Length];
+        _atritosLongitudinaisBase = new WheelFrictionCurve[_rodas.Length];
+
+        for (int i = 0; i < _rodas.Length; i++)
+        {
+            if (!_rodas[i]) continue;
+
+            _atritosLateraisBase[i] = _rodas[i].sidewaysFriction;
+            _atritosLongitudinaisBase[i] = _rodas[i].forwardFriction;
+        }
+
         var distanciaEntreEixos = Mathf.Abs(
             rodaColliderFL.transform.localPosition.z - rodaColliderRL.transform.localPosition.z
         );
@@ -31,6 +58,20 @@ public class CarroRodas : MonoBehaviour
 
         _l = distanciaEntreEixos;
         _w = larguraDianteira;
+    }
+
+    private void FixedUpdate()
+    {
+        AtualizarAderenciaChuva();
+    }
+
+    private void OnDisable()
+    {
+        if (_rodas == null) return;
+
+        _fatorAderenciaLateralAtual = 1f;
+        _fatorAderenciaLongitudinalAtual = 1f;
+        AplicarAderencia(1f, 1f);
     }
 
     public void AplicarDirecaoVolante(float anguloDirecao)
@@ -92,6 +133,55 @@ public class CarroRodas : MonoBehaviour
         AtualizarRoda(rodaColliderFR, rodaMeshFR);
         AtualizarRoda(rodaColliderRL, rodaMeshRL);
         AtualizarRoda(rodaColliderRR, rodaMeshRR);
+    }
+
+    private void AtualizarAderenciaChuva()
+    {
+        if (!rb || _rodas == null) return;
+
+        var velocidadeKmH = rb.linearVelocity.magnitude * 3.6f;
+        var intervaloVelocidade = Mathf.Max(
+            velocidadeAderenciaMinimaKmH - velocidadeInicioDeslizamentoKmH,
+            0.01f
+        );
+        var fatorVelocidade = Mathf.Clamp01(
+            (velocidadeKmH - velocidadeInicioDeslizamentoKmH) / intervaloVelocidade
+        );
+        var intensidadeDeslizamento = Chuva.IntensidadeAtual * fatorVelocidade;
+
+        var aderenciaLateralAlvo = 1f - (reducaoMaximaAderenciaLateral * intensidadeDeslizamento);
+        var aderenciaLongitudinalAlvo = 1f - (reducaoMaximaAderenciaLongitudinal * intensidadeDeslizamento);
+        var fatorSuavizacao = 1f - Mathf.Exp(-suavizacaoAderencia * Time.fixedDeltaTime);
+
+        _fatorAderenciaLateralAtual = Mathf.Lerp(
+            _fatorAderenciaLateralAtual,
+            aderenciaLateralAlvo,
+            fatorSuavizacao
+        );
+        _fatorAderenciaLongitudinalAtual = Mathf.Lerp(
+            _fatorAderenciaLongitudinalAtual,
+            aderenciaLongitudinalAlvo,
+            fatorSuavizacao
+        );
+
+        AplicarAderencia(_fatorAderenciaLateralAtual, _fatorAderenciaLongitudinalAtual);
+    }
+
+    private void AplicarAderencia(float fatorLateral, float fatorLongitudinal)
+    {
+        for (int i = 0; i < _rodas.Length; i++)
+        {
+            var roda = _rodas[i];
+            if (!roda) continue;
+
+            var atritoLateral = _atritosLateraisBase[i];
+            atritoLateral.stiffness *= fatorLateral;
+            roda.sidewaysFriction = atritoLateral;
+
+            var atritoLongitudinal = _atritosLongitudinaisBase[i];
+            atritoLongitudinal.stiffness *= fatorLongitudinal;
+            roda.forwardFriction = atritoLongitudinal;
+        }
     }
 
     private static void AtualizarRoda(WheelCollider rodaCollider, Transform rodaMesh)
