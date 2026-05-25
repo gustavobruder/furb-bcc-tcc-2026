@@ -9,6 +9,8 @@ public class Chuva : MonoBehaviour
     private const float DawnDuskMaxRotation = 270.0f;
     private const float SkyDomeMinOffset = 0.0f;
     private const float SkyDomeMaxOffset = 0.5f;
+    private const float SunMinIntensity = 0.0f;
+    private const float SunMaxIntensity = 1.0f;
 
     public RainScript RainScript;
     public UnityEngine.UI.Slider RainSlider;
@@ -20,6 +22,7 @@ public class Chuva : MonoBehaviour
     private Renderer skyDomeRenderer;
 
     private Material skyDomeMaterial;
+    private Light sunLight;
 
 
     private void Start()
@@ -46,9 +49,27 @@ public class Chuva : MonoBehaviour
 
     public void DawnDuskSliderChanged(float valor)
     {
-        float rotation = Mathf.Lerp(DawnDuskMinRotation, DawnDuskMaxRotation, valor);
+        float normalizedValue = Mathf.Clamp01(valor);
+        float rotation = Mathf.Lerp(DawnDuskMinRotation, DawnDuskMaxRotation, normalizedValue);
         Sun.transform.rotation = Quaternion.Euler(rotation, 0.0f, 0.0f);
-        UpdateSkyDomeOffset(valor);
+        UpdateSunIntensity(normalizedValue);
+        UpdateSkyDomeOffset(normalizedValue);
+    }
+
+    private void UpdateSunIntensity(float valor)
+    {
+        if (sunLight == null)
+        {
+            sunLight = Sun.GetComponent<Light>();
+        }
+
+        if (sunLight == null)
+        {
+            Debug.LogWarning("The Sun object does not have a Light component.");
+            return;
+        }
+
+        sunLight.intensity = Mathf.Lerp(SunMaxIntensity, SunMinIntensity, valor);
     }
 
     private void UpdateSkyDomeOffset(float valor)
