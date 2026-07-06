@@ -11,9 +11,9 @@ public class Semaforo : MonoBehaviour
     }
 
     [Header("Duracao")]
-    [Min(0.1f)] public float duracaoVerde = 8f;
-    [Min(0.1f)] public float duracaoAmarelo = 2f;
-    [Min(0.1f)] public float duracaoVermelho = 8f;
+    [Min(0.1f)] public float duracaoVerde = 10f;
+    [Min(0.1f)] public float duracaoAmarelo = 4f;
+    [Min(0.1f)] public float duracaoVermelho = 10f;
     public EstadoSemaforo estadoInicial = EstadoSemaforo.Vermelho;
     public EstadoSemaforo estadoAtual;
 
