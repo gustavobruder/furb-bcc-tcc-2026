@@ -19468,6 +19468,10 @@ PrefabInstance:
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1308400354}
+    - target: {fileID: 1351204377741882196, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1671177731692514981, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: notificacao
       value: 
@@ -21533,6 +21537,10 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 509cd9961a68fb24f93e8595874616d5, type: 2}
+    - target: {fileID: 4538696410643314335, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: m_Name
       value: Carro4_Jogador
@@ -21813,6 +21821,14 @@ PrefabInstance:
     - target: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386722955500964281, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3395309452396114162, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5585345664888453955, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: notificacao
@@ -28820,6 +28836,10 @@ PrefabInstance:
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 2048546147}
+    - target: {fileID: 1860376216566163154, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -29097,6 +29117,10 @@ PrefabInstance:
       propertyPath: gerenciadorVagas
       value: 
       objectReference: {fileID: 669004203}
+    - target: {fileID: 1075780034502397111, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1792733889561203615, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: notificacao
       value: 
@@ -29874,7 +29898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 13.333313, y: 13.333328}
+  m_AnchoredPosition: {x: 13.333313, y: 13.333313}
   m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2077763617

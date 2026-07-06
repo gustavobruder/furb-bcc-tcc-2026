@@ -1066,6 +1066,14 @@ PrefabInstance:
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1134030699}
+    - target: {fileID: 1351204377741882196, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351204377741882196, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642936047121549901, guid: 2fd5140d1bb9a2a46bdb871739c1de2c, type: 3}
       propertyPath: notificacao
       value: 
@@ -4774,6 +4782,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 898196386037027533, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386722955500964281, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5585345664888453955, guid: cfae08676ca38224987f5b415d56f92b, type: 3}
@@ -20394,6 +20406,10 @@ PrefabInstance:
       propertyPath: carroFisicaAutomatica
       value: 
       objectReference: {fileID: 963518315}
+    - target: {fileID: 1860376216566163154, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24
@@ -20433,6 +20449,10 @@ PrefabInstance:
     - target: {fileID: 2316974659678934490, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730739312712081874, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3279771432190605316, guid: e140a41a94f10cc4ab23f94c6273c4f9, type: 3}
       propertyPath: notificacao
@@ -24549,6 +24569,10 @@ PrefabInstance:
       propertyPath: volanteComRotacaoInicial
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3513253728283518305, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3865611223326206553, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: notificacao
       value: 
@@ -24557,6 +24581,10 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 509cd9961a68fb24f93e8595874616d5, type: 2}
+    - target: {fileID: 4538696410643314335, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4731104956418901717, guid: 1aafd7d86633a3547a988f8f66832863, type: 3}
       propertyPath: m_Name
       value: Carro4_Jogador
@@ -26806,6 +26834,10 @@ PrefabInstance:
       propertyPath: notificacao
       value: 
       objectReference: {fileID: 1134030699}
+    - target: {fileID: 1075780034502397111, guid: 428fb35c9809caa428039730265ffc13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1792733889561203615, guid: 428fb35c9809caa428039730265ffc13, type: 3}
       propertyPath: notificacao
       value: 
